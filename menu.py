@@ -9,7 +9,9 @@ def mostrarMenu():
     opcion = int(input("Seleccione una opción: "))
     return opcion
 
-while True:
+opcion = 0
+control = True
+while control:
     opcion = mostrarMenu()
 
     if opcion == 1:
@@ -21,3 +23,4 @@ while True:
         print(f"Edad  : {edad}")
     elif opcion == 3:
         print("Hasta luego.")
+        control=False
